@@ -1,20 +1,28 @@
 {
   "name": "vite-sample-proj",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
+    "serve": "vite build && vite preview",
+    "build": "vite build",
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "@mdi/font": "7.0.96",
+    "roboto-fontface": "*",
+    "vue": "^3.2.37",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.0",
-    "vue-tsc": "^0.38.4"
-  }
+    "@types/webfontloader": "^1.6.34",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.7",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.1",
+    "vue-tsc": "^0.38.9"
+  },
+  "type": "module"
 }
