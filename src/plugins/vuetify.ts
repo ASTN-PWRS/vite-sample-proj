@@ -4,7 +4,15 @@ import 'vuetify/styles'
 
 // Vuetify
 import { createVuetify } from 'vuetify'
+import { CustomLightTheme,CustomDarkTheme} from '../configs/vuetify.theme'
 
-export default createVuetify(
-  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
-)
+// https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
+export default createVuetify({
+  theme: {
+    defaultTheme: 'CustomLightTheme',
+    themes: {
+      CustomLightTheme,
+      CustomDarkTheme,
+    }
+  }
+})

@@ -1,26 +1,16 @@
 <template>
   <v-app>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+    <router-view>
+    </router-view>
   </v-app>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-
+import { defineComponent, ref } from 'vue'
+import RouteLocationNormalizedLoaded from 'vue-router'
 export default defineComponent({
   name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data () {
-    return {
-      //
-    }
-  },
+  setup() {
+  }
 })
 </script>
